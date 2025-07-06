@@ -9,4 +9,8 @@ public class AppUser
     //Username and UserName are two separate things in c# as it is a case sensitive language
     // when nullable not enabled .net doesnt know if reference types can be null or not
     public required string UserName { get; set; }
+
+    public required byte[] PasswordHash { get; set; }
+
+    public required byte[] PasswordSalt { get; set; }
 }
